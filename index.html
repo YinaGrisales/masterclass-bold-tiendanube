@@ -1112,14 +1112,15 @@
       line-height: 1.5;
     }
 
-    .modal-form-wrapper {
+    #hubspot-form-container {
       margin-bottom: 24px;
+      text-align: left;
     }
 
-    .modal-form-wrapper iframe {
+    #hubspot-form-container iframe {
       border: none;
-      border-radius: 12px;
-      display: block;
+      width: 100%;
+      min-height: 400px;
     }
 
     .modal-info {
@@ -1284,7 +1285,7 @@
         <div class="separator"></div>
         <img src="assets/logo-tiendanube.png" alt="Tiendanube" class="logo-tiendanube">
       </div>
-      <a href="https://share.hsforms.com/1y1A60Yf2R2q8EyorNVXwzg4vc7g" target="_self" class="btn btn-primary btn-nav">Reservar mi lugar</a>
+      <a href="javascript:void(0)" onclick="openModal()" class="btn btn-primary btn-nav">Reservar mi lugar</a>
     </div>
   </nav>
 
@@ -1304,7 +1305,7 @@
             Aprende paso a paso a crear tu página web con carrito de compras, recibir pagos con tarjeta y vender las 24 horas sin depender del chat.
           </p>
           <div class="hero-cta-group">
-            <a href="https://share.hsforms.com/1y1A60Yf2R2q8EyorNVXwzg4vc7g" target="_self" class="btn btn-primary btn-lg">Quiero inscribirme gratis</a>
+            <a href="javascript:void(0)" onclick="openModal()" class="btn btn-primary btn-lg">Quiero inscribirme gratis</a>
             <a href="#aprende" class="btn btn-outline btn-lg">Ver qué aprenderás</a>
           </div>
           <div class="hero-info">
@@ -1497,7 +1498,7 @@
     <div class="container">
       <h2>Deja que tu página trabaje las 24 horas</h2>
       <p>Para que tú dejes de ser una contestadora de mensajes y te enfoques en crecer.</p>
-      <a href="https://share.hsforms.com/1y1A60Yf2R2q8EyorNVXwzg4vc7g" target="_self" class="btn btn-lg" style="background:var(--white);color:var(--bold-navy);font-weight:800;box-shadow:0 8px 32px rgba(0,0,0,0.2);">Reservar mi lugar gratis</a>
+      <a href="javascript:void(0)" onclick="openModal()" class="btn btn-lg" style="background:var(--white);color:var(--bold-navy);font-weight:800;box-shadow:0 8px 32px rgba(0,0,0,0.2);">Reservar mi lugar gratis</a>
     </div>
   </section>
 
@@ -1541,7 +1542,7 @@
               </div>
             </div>
           </div>
-          <a href="https://share.hsforms.com/1y1A60Yf2R2q8EyorNVXwzg4vc7g" target="_self" class="btn btn-primary btn-lg">Quiero aprender con Leidy</a>
+          <a href="javascript:void(0)" onclick="openModal()" class="btn btn-primary btn-lg">Quiero aprender con Leidy</a>
         </div>
       </div>
     </div>
@@ -1599,7 +1600,7 @@
     <div class="container">
       <h2>Lanza tu página web para vender y recibir pagos por internet</h2>
       <p>Inscríbete ahora y aprende a montar tu tienda virtual paso a paso. Cupos limitados.</p>
-      <a href="https://share.hsforms.com/1y1A60Yf2R2q8EyorNVXwzg4vc7g" target="_self" class="btn btn-lg" style="background:var(--white);color:var(--bold-navy);font-weight:800;box-shadow:0 8px 32px rgba(0,0,0,0.2);">Inscribirme a la Masterclass gratis</a>
+      <a href="javascript:void(0)" onclick="openModal()" class="btn btn-lg" style="background:var(--white);color:var(--bold-navy);font-weight:800;box-shadow:0 8px 32px rgba(0,0,0,0.2);">Inscribirme a la Masterclass gratis</a>
       <div class="final-cta-logos">
         <img src="assets/logo-bold-blanco.png" alt="Bold" class="logo-bold">
         <span style="color: rgba(255,255,255,0.3);">×</span>
@@ -1608,6 +1609,31 @@
     </div>
   </section>
 
+  <!-- MODAL FORMULARIO -->
+  <div class="modal-overlay" id="formModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()" aria-label="Cerrar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body">
+        <div class="modal-header-logos">
+          <img src="assets/logo-bold.png" alt="Bold" class="logo-bold">
+          <span style="color:var(--gray-200);">×</span>
+          <img src="assets/logo-tiendanube.png" alt="Tiendanube" class="logo-tiendanube">
+        </div>
+        <h2>Reserva tu lugar <span style="color:var(--tiendanube-blue);">gratis</span></h2>
+        <p class="modal-subtitle">Los cupos son limitados. Regístrate y recibe toda la información en tu WhatsApp.</p>
+        <div id="hubspot-form-container"></div>
+        <div class="modal-info">
+          <span>📅 18 de marzo</span>
+          <span>🕓 4:30 p.m.</span>
+          <span>💻 En vivo</span>
+          <span>🎁 Gratis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
@@ -1615,6 +1641,7 @@
     </div>
   </footer>
 
+  <script src="//js.hsforms.net/forms/embed/v2.js"></script>
   <script>
     function toggleFaq(button) {
       var item = button.parentElement;
@@ -1629,6 +1656,39 @@
       }
     }
 
+    var modal = document.getElementById('formModal');
+    var formLoaded = false;
+
+    function openModal() {
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+
+      if (!formLoaded && window.hbspt) {
+        hbspt.forms.create({
+          portalId: "237990840",
+          formId: "cb503ad1-87f6-476a-bc13-2a2b3555f0ce",
+          target: "#hubspot-form-container"
+        });
+        formLoaded = true;
+      }
+    }
+
+    function closeModal() {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModal();
+      }
+    });
   </script>
 </body>
 </html>

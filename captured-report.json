@@ -1,0 +1,137 @@
+{
+  "capturedAt": "2026-02-23T19:26:52.574189",
+  "resultados": {
+    "NPsTableauQ1": "148",
+    "NPsAcciones": "72",
+    "Proyecciones": "206",
+    "Inversion": "$ 35.441.525",
+    "CACUSDAcciones": "60.83",
+    "CACUSDGeneral": "29.59",
+    "Q1Summary": {
+      "Tableau": null,
+      "Meta": null,
+      "TableauVsMeta": null,
+      "TabProyVsMeta": null,
+      "CACAcc": null,
+      "CACGen": null
+    },
+    "palancaBreakdown": {
+      "Comunidad": {
+        "acciones": 10,
+        "NPs": 65
+      },
+      "Tradicional": {
+        "acciones": 5,
+        "NPs": 0
+      },
+      "Alianza": {
+        "acciones": 6,
+        "NPs": 7
+      },
+      "Dropshipping": {
+        "acciones": 0,
+        "NPs": 0
+      }
+    },
+    "conversionTable": {
+      "headers": [
+        "AFILIADO / FECHA",
+        "WA",
+        "ASIST.",
+        "AST/WA",
+        "TR.",
+        "WA/TR",
+        "NPS",
+        "PROY.",
+        "Δ NP",
+        "✓",
+        "NP/TR",
+        "FIJO",
+        "VAR.",
+        "COMIS.",
+        "PAUTA",
+        "TOTAL",
+        "CAC COP",
+        "CAC USD",
+        "NOTAS",
+        "",
+        "Clase",
+        "",
+        "",
+        "29.4%",
+        "",
+        "15.0%",
+        "",
+        "",
+        "▲ +5",
+        "",
+        "65.2%",
+        "$",
+        "$",
+        "Con comis.\nSin comis.\n$ 616.275",
+        "$",
+        "$ 3.465.275",
+        "$ 231.018",
+        "$62.44",
+        "+ nota",
+        "×"
+      ],
+      "rows": [
+        "AFILIADO / FECHA\tWA\tASIST.\tAST/WA\tTR.\tWA/TR\tNPS\tPROY.\tΔ NP\t✓\tNP/TR\tFIJO\tVAR.\tCOMIS.\tPAUTA\tTOTAL\tCAC COP\tCAC USD\tNOTAS\t",
+        "Clase\n\t\t\t29.4%\t\t15.0%\t\t\t▲ +5\t\t65.2%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 616.275\n\t\n$\n\t$ 3.465.275\t$ 231.018\t$62.44\t\n+ nota\n\t×",
+        "Clase\n\t\t\t21.1%\t\t8.5%\t\t\t▼ -11\t\t116.7%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 575.190\n\t\n$\n\t$ 5.129.190\t$ 366.371\t$99.02\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0.0%\t\t15.2%\t\t\t0\t\t60.5%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 944.955\n\t\n$\n\t$ 4.980.955\t$ 216.563\t$58.53\t\n+ nota\n\t×",
+        "Clase\n\t\t\t50.5%\t\t8.3%\t\t\t▲ +2\t\t43.8%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 1.295.000\t$ 185.000\t$50.00\t\n+ nota\n\t×",
+        "Contenido\n\t\t\t0%\t\t0%\t\t\t▼ -4\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -2\t\t39.4%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 534.105\n\t\n$\n\t$ 1.334.105\t$ 102.623\t$27.74\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -10\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 4.000.000\t$ 0\t$0.00\t\nBudget fijo de B&...\n\t×",
+        "Contenido\n\t\t\t0%\t\t0%\t\t\t▼ -3\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 1.800.000\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -40\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 3.130.000\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Contenido\n\t\t\t0%\t\t0%\t\t\t▼ -2\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 2.177.000\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -7\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Contenido\n\t\t\t0%\t\t0%\t\t\t▼ -2\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Contenido\n\t\t\t0%\t\t0%\t\t\t▼ -4\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -30\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -15\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 5.000.000\t$ 0\t$0.00\t\nNegociación sacando ...\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -10\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\nMerchant Masterclass\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -15\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -7\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -10\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -40\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 3.130.000\t$ 0\t$0.00\t\n+ nota\n\t×",
+        "Clase\n\t\t\t0%\t\t0%\t\t\t▼ -7\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×"
+      ]
+    },
+    "TRM": null,
+    "baseComisionesFormula": "$\n×1 + ×\n%\n=\n$ 41.085",
+    "baseComisionesResult": "41.085",
+    "fullPageText": "📊\nHub 2026\n\nPanel de gestión de afiliados\n\nPlanificación\nResultados\nPALANCA\nTodas las palancas\nComunidad\nTradicional\nAlianza\nDropshipping\nAFILIADO\nTodos los afiliados\nVivi Garcia\nOrange\nTati Uribe\nPetalosi\nLa fábrica\nCountry Toy\nJairo García\nCamilo Barbosa\nGabri en remoto\nSofia Pricot\nJonathan Reginfo\nDesciré/softwow\nBold\nAdsales\nMastershop\nTest alianzas\nRESULTADOS PARTNER CLICK\nNPS TABLEAU TOTAL\n148\nNPS ACCIONES\n72\nPROYECCIONES\n206\n✓ = excluir de proy.\nINVERSIÓN\n$ 35.441.525\nCAC USD ACCIONES TOTAL\n$60.83\nInversión / NPs Acciones\nCAC USD GENERAL TOTAL\n$29.59\nInversión / NPs Tableau\n\nQ1\n\nTableau:\nMeta:\nTableau vs Meta: Faltan: 222\nTab+Proy vs Meta: Faltan: 16\nCAC Acc: $60.83\nCAC Gen: $29.59\n\nQ2\n\nTableau:\nMeta:\nTableau vs Meta: Cumplida\nTab+Proy vs Meta: Cumplida\nCAC Acc: $0.00\nCAC Gen: $0.00\n\nQ3\n\nTableau:\nMeta:\nTableau vs Meta: Cumplida\nTab+Proy vs Meta: Cumplida\nCAC Acc: $0.00\nCAC Gen: $0.00\n\nQ4\n\nTableau:\nMeta:\nTableau vs Meta: Cumplida\nTab+Proy vs Meta: Cumplida\nCAC Acc: $0.00\nCAC Gen: $0.00\nCOMUNIDAD\n10 acciones\n65NPs\nTRADICIONAL\n5 acciones\n0NPs\nALIANZA\n6 acciones\n7NPs\nDROPSHIPPING\n0 acciones\n0NPs\nPERIODO\nTodo\nQ1\nQ2\nQ3\nQ4\nEne\nFeb\nMar\nAbr\nMay\nJun\nJul\nAgo\nSep\nOct\nNov\nDic\nFILTRO\n✓\nSolo check\nSEGUIMIENTO DE CONVERSIONES\nCSV\nVINCULAR\nMANUAL\nAFILIADO / FECHA\tWA\tASIST.\tAST/WA\tTR.\tWA/TR\tNPS\tPROY.\tΔ NP\t✓\tNP/TR\tFIJO\tVAR.\tCOMIS.\tPAUTA\tTOTAL\tCAC COP\tCAC USD\tNOTAS\t\n\nClase\n\t\t\t29.4%\t\t15.0%\t\t\t▲ +5\t\t65.2%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 616.275\n\t\n$\n\t$ 3.465.275\t$ 231.018\t$62.44\t\n+ nota\n\t×\n\nClase\n\t\t\t21.1%\t\t8.5%\t\t\t▼ -11\t\t116.7%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 575.190\n\t\n$\n\t$ 5.129.190\t$ 366.371\t$99.02\t\n+ nota\n\t×\n\nClase\n\t\t\t0.0%\t\t15.2%\t\t\t0\t\t60.5%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 944.955\n\t\n$\n\t$ 4.980.955\t$ 216.563\t$58.53\t\n+ nota\n\t×\n\nClase\n\t\t\t50.5%\t\t8.3%\t\t\t▲ +2\t\t43.8%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 1.295.000\t$ 185.000\t$50.00\t\n+ nota\n\t×\n\nContenido\n\t\t\t0%\t\t0%\t\t\t▼ -4\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -2\t\t39.4%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 534.105\n\t\n$\n\t$ 1.334.105\t$ 102.623\t$27.74\t\n+ nota\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -10\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 4.000.000\t$ 0\t$0.00\t\nBudget fijo de B&...\n\t×\n\nContenido\n\t\t\t0%\t\t0%\t\t\t▼ -3\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 1.800.000\t$ 0\t$0.00\t\n+ nota\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -40\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 3.130.000\t$ 0\t$0.00\t\n+ nota\n\t×\n\nContenido\n\t\t\t0%\t\t0%\t\t\t▼ -2\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 2.177.000\t$ 0\t$0.00\t\n+ nota\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -7\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×\n\nContenido\n\t\t\t0%\t\t0%\t\t\t▼ -2\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×\n\nContenido\n\t\t\t0%\t\t0%\t\t\t▼ -4\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -30\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -15\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 5.000.000\t$ 0\t$0.00\t\nNegociación sacando ...\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -10\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\nMerchant Masterclass\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -15\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -7\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -10\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -40\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 3.130.000\t$ 0\t$0.00\t\n+ nota\n\t×\n\nClase\n\t\t\t0%\t\t0%\t\t\t▼ -7\t\t0%\t\n$\n\t\n$\n\t\nCon comis.\nSin comis.\n$ 0\n\t\n$\n\t$ 0\t$ 0\t$0.00\t\n+ nota\n\t×\nGUARDADO AUTOMÁTICO · SUPABASE ☁\n☑ SINCRONIZADO\nTRM:\n$\nBASE COMISIONES:\n$\n×1 + ×\n%\n=\n$ 41.085\n/NP\n↻ RECARGAR NUBE"
+  },
+  "planificacion": {
+    "clasesPerQuarter": {
+      "Q1": 16,
+      "Q2": 3,
+      "Q3": 0,
+      "Q4": 0
+    },
+    "contenidoPerQuarter": {
+      "Q1": 10,
+      "Q2": 0,
+      "Q3": 0,
+      "Q4": 0
+    },
+    "afiliadosPorPalanca": {
+      "Comunidad": 4,
+      "Tradicional": 3,
+      "Alianza": 4,
+      "Dropshipping": 0
+    },
+    "february2026": "📊\nHub 2026\n\nPanel de gestión de afiliados\n\nPlanificación\nResultados\nPALANCA\nTodas las palancas\nComunidad\nTradicional\nAlianza\nDropshipping\nAFILIADO\nTodos los afiliados\nVivi Garcia\nOrange\nTati Uribe\nPetalosi\nLa fábrica\nCountry Toy\nJairo García\nCamilo Barbosa\nGabri en remoto\nSofia Pricot\nJonathan Reginfo\nDesciré/softwow\nBold\nAdsales\nMastershop\nTest alianzas\nTIPO\nTodos\n🗓️ Convocatoria\n🎓 Clase\n📒 Contenido\n🚨 Cierre\nEne\nFeb\nMar\nAbr\nMay\nJun\nJul\nAgo\nSep\nOct\nNov\nDic\nCLASES\n6\nCONTENIDO\n7\n\nQ1\n\n16/10\nclases / contenido\n\nQ2\n\n3/0\nclases / contenido\n\nQ3\n\n0/0\nclases / contenido\n\nQ4\n\n0/0\nclases / contenido\n\nAFILIADOS ACTIVOS POR PALANCA\n\nComunidad\n4\nTradicional\n3\nAlianza\n4\nDropshipping\n0\n❮\nFEBRERO 2026\n❯\nW\nLUN\nMAR\nMIÉ\nJUE\nVIE\nSÁB\nDOM\n-\n1\n🗓️ Petalosi\n6\n2\n🗓️ Petalosi\n🎓 Vivi Garcia\n3\n🗓️ Petalosi\n4\n🗓️ Petalosi\n🎓 Bold\n5\n🗓️ Petalosi\n6\n🗓️ Petalosi\n🚨 Orange\n7\n🗓️ Petalosi\n8\n🗓️ Petalosi\n7\n9\n🗓️ Petalosi\n🚨 La fábrica\n🗓️ Adsales\n10\n🗓️ Petalosi\n🗓️ La fábrica\n🗓️ Adsales\n📒 Sofia Pricot\n11\n🗓️ Petalosi\n🗓️ La fábrica\n🗓️ Adsales\n🚨 Bold\n12\n🎓 Petalosi [15]\n🗓️ La fábrica\n🗓️ Adsales\n📒 Jairo García [4]\n13\n🗓️ La fábrica\n🗓️ Adsales\n14\n🗓️ La fábrica\n🗓️ Adsales\n15\n🗓️ La fábrica\n🗓️ Adsales\n8\n16\n🗓️ La fábrica\n🗓️ Adsales\n17\n🗓️ La fábrica\n🗓️ Adsales\n18\n🗓️ La fábrica\n🗓️ Adsales\n📒 Sofia Pricot\n19\n🚨 Petalosi\n🗓️ La fábrica\n🗓️ Adsales\n🚨 Vivi Garcia\n20\n🗓️ La fábrica\n🎓 Adsales [10]\n21\n🗓️ La fábrica\n22\n🗓️ La fábrica\n9\n23\n🗓️ La fábrica\n📒 Gabri en remoto [1]\n24\n🎓 La fábrica\n📒 Sofia Pricot [1]\n🗓️ Desciré/softwow\n📒 Desciré/softwow\n25\n🗓️ Desciré/softwow\n26\n🗓️ Orange\n📒 Dessiré\n🗓️ Desciré/softwow\n🎓 Test alianzas [7]\n27\n🗓️ Orange\n🚨 Adsales\n🗓️ Desciré/softwow\n28\n🗓️ Orange\n🗓️ Desciré/softwow",
+    "march2026": "📊\nHub 2026\n\nPanel de gestión de afiliados\n\nPlanificación\nResultados\nPALANCA\nTodas las palancas\nComunidad\nTradicional\nAlianza\nDropshipping\nAFILIADO\nTodos los afiliados\nVivi Garcia\nOrange\nTati Uribe\nPetalosi\nLa fábrica\nCountry Toy\nJairo García\nCamilo Barbosa\nGabri en remoto\nSofia Pricot\nJonathan Reginfo\nDesciré/softwow\nBold\nAdsales\nMastershop\nTest alianzas\nTIPO\nTodos\n🗓️ Convocatoria\n🎓 Clase\n📒 Contenido\n🚨 Cierre\nEne\nFeb\nMar\nAbr\nMay\nJun\nJul\nAgo\nSep\nOct\nNov\nDic\nCLASES\n8\nCONTENIDO\n3\n\nQ1\n\n16/10\nclases / contenido\n\nQ2\n\n3/0\nclases / contenido\n\nQ3\n\n0/0\nclases / contenido\n\nQ4\n\n0/0\nclases / contenido\n\nAFILIADOS ACTIVOS POR PALANCA\n\nComunidad\n5\nTradicional\n3\nAlianza\n3\nDropshipping\n0\n❮\nMARZO 2026\n❯\nW\nLUN\nMAR\nMIÉ\nJUE\nVIE\nSÁB\nDOM\n-\n1\n🗓️ Orange\n🗓️ Desciré/softwow\n10\n2\n🗓️ Orange\n🗓️ Desciré/softwow\n3\n🚨 La fábrica\n🗓️ Orange\n🗓️ Desciré/softwow\n4\n🗓️ Orange\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Bold\n📒 Jonathan Reginfo [2]\n5\n🗓️ Orange\n📒 Camilo Barbosa [4]\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n🚨 Test alianzas\n6\n🗓️ Orange\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n7\n🗓️ Orange\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n8\n🗓️ Orange\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n11\n9\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n10\n🗓️ La fábrica\n🗓️ Petalosi\n🗓️ Orange\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n11\n🗓️ La fábrica\n🗓️ Petalosi\n🗓️ Orange\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n12\n🗓️ La fábrica\n🗓️ Petalosi\n🎓 Orange [30]\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n13\n🗓️ La fábrica\n🗓️ Petalosi\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n14\n🗓️ La fábrica\n🗓️ Petalosi\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n15\n🗓️ La fábrica\n🗓️ Petalosi\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n12\n16\n🗓️ La fábrica\n🗓️ Petalosi\n🗓️ Tati Uribe\n🗓️ Desciré/softwow\n🗓️ Country Toy\n🗓️ Bold\n17\n🗓️ La fábrica\n🗓️ Petalosi\n🗓️ Tati Uribe\n🎓 Desciré/softwow [15]\n🗓️ Country Toy\n🗓️ Bold\n18\n🗓️ La fábrica\n🗓️ Petalosi\n🗓️ Country Toy\n🎓 Bold [10]\n19\n🗓️ La fábrica\n🗓️ Petalosi\n📒 Jairo García\n🎓 Country Toy [10]\n🎓 Test alianzas [7]\n20\n🗓️ La fábrica\n🗓️ Petalosi\n🚨 Orange\n21\n🗓️ La fábrica\n🗓️ Petalosi\n22\n🗓️ La fábrica\n🗓️ Petalosi\n13\n23\n🗓️ La fábrica\n🗓️ Petalosi\n24\n🎓 La fábrica [40]\n🗓️ Petalosi\n🎓 Tati Uribe [15]\n🚨 Tati Uribe\n🚨 Desciré/softwow\n25\n🎓 Petalosi [7]\n🚨 Bold\n26\n🚨 Country Toy\n🚨 Test alianzas\n27\n28\n29\n14\n30\n🚨 La fábrica\n🚨 Petalosi\n31",
+    "january2026": "📊\nHub 2026\n\nPanel de gestión de afiliados\n\nPlanificación\nResultados\nPALANCA\nTodas las palancas\nComunidad\nTradicional\nAlianza\nDropshipping\nAFILIADO\nTodos los afiliados\nVivi Garcia\nOrange\nTati Uribe\nPetalosi\nLa fábrica\nCountry Toy\nJairo García\nCamilo Barbosa\nGabri en remoto\nSofia Pricot\nJonathan Reginfo\nDesciré/softwow\nBold\nAdsales\nMastershop\nTest alianzas\nTIPO\nTodos\n🗓️ Convocatoria\n🎓 Clase\n📒 Contenido\n🚨 Cierre\nEne\nFeb\nMar\nAbr\nMay\nJun\nJul\nAgo\nSep\nOct\nNov\nDic\nCLASES\n2\nCONTENIDO\n0\n\nQ1\n\n16/10\nclases / contenido\n\nQ2\n\n3/0\nclases / contenido\n\nQ3\n\n0/0\nclases / contenido\n\nQ4\n\n0/0\nclases / contenido\n\nAFILIADOS ACTIVOS POR PALANCA\n\nComunidad\n4\nTradicional\n0\nAlianza\n0\nDropshipping\n0\n❮\nENERO 2026\n❯\nW\nLUN\nMAR\nMIÉ\nJUE\nVIE\nSÁB\nDOM\n-\n1\n2\n3\n4\n2\n5\n6\n7\n8\n9\n10\n11\n3\n12\n13\n14\n🗓️ Vivi Garcia\n15\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n16\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n17\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n18\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n4\n19\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n20\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n21\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n22\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n23\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n24\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n25\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n5\n26\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n27\n🗓️ La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n28\n🎓 La fábrica\n🗓️ Orange\n🗓️ Vivi Garcia\n29\n🗓️ Petalosi\n🎓 Orange\n🗓️ Vivi Garcia\n30\n🗓️ Petalosi\n🗓️ Vivi Garcia\n31\n🗓️ Petalosi\n🗓️ Vivi Garcia",
+    "fullPageText": "📊\nHub 2026\n\nPanel de gestión de afiliados\n\nPlanificación\nResultados\nPALANCA\nTodas las palancas\nComunidad\nTradicional\nAlianza\nDropshipping\nAFILIADO\nTodos los afiliados\nVivi Garcia\nOrange\nTati Uribe\nPetalosi\nLa fábrica\nCountry Toy\nJairo García\nCamilo Barbosa\nGabri en remoto\nSofia Pricot\nJonathan Reginfo\nDesciré/softwow\nBold\nAdsales\nMastershop\nTest alianzas\nTIPO\nTodos\n🗓️ Convocatoria\n🎓 Clase\n📒 Contenido\n🚨 Cierre\nEne\nFeb\nMar\nAbr\nMay\nJun\nJul\nAgo\nSep\nOct\nNov\nDic\nCLASES\n6\nCONTENIDO\n7\n\nQ1\n\n16/10\nclases / contenido\n\nQ2\n\n3/0\nclases / contenido\n\nQ3\n\n0/0\nclases / contenido\n\nQ4\n\n0/0\nclases / contenido\n\nAFILIADOS ACTIVOS POR PALANCA\n\nComunidad\n4\nTradicional\n3\nAlianza\n4\nDropshipping\n0\n❮\nFEBRERO 2026\n❯\nW\nLUN\nMAR\nMIÉ\nJUE\nVIE\nSÁB\nDOM\n-\n1\n🗓️ Petalosi\n6\n2\n🗓️ Petalosi\n🎓 Vivi Garcia\n3\n🗓️ Petalosi\n4\n🗓️ Petalosi\n🎓 Bold\n5\n🗓️ Petalosi\n6\n🗓️ Petalosi\n🚨 Orange\n7\n🗓️ Petalosi\n8\n🗓️ Petalosi\n7\n9\n🗓️ Petalosi\n🚨 La fábrica\n🗓️ Adsales\n10\n🗓️ Petalosi\n🗓️ La fábrica\n🗓️ Adsales\n📒 Sofia Pricot\n11\n🗓️ Petalosi\n🗓️ La fábrica\n🗓️ Adsales\n🚨 Bold\n12\n🎓 Petalosi [15]\n🗓️ La fábrica\n🗓️ Adsales\n📒 Jairo García [4]\n13\n🗓️ La fábrica\n🗓️ Adsales\n14\n🗓️ La fábrica\n🗓️ Adsales\n15\n🗓️ La fábrica\n🗓️ Adsales\n8\n16\n🗓️ La fábrica\n🗓️ Adsales\n17\n🗓️ La fábrica\n🗓️ Adsales\n18\n🗓️ La fábrica\n🗓️ Adsales\n📒 Sofia Pricot\n19\n🚨 Petalosi\n🗓️ La fábrica\n🗓️ Adsales\n🚨 Vivi Garcia\n20\n🗓️ La fábrica\n🎓 Adsales [10]\n21\n🗓️ La fábrica\n22\n🗓️ La fábrica\n9\n23\n🗓️ La fábrica\n📒 Gabri en remoto [1]\n24\n🎓 La fábrica\n📒 Sofia Pricot [1]\n🗓️ Desciré/softwow\n📒 Desciré/softwow\n25\n🗓️ Desciré/softwow\n26\n🗓️ Orange\n📒 Dessiré\n🗓️ Desciré/softwow\n🎓 Test alianzas [7]\n27\n🗓️ Orange\n🚨 Adsales\n🗓️ Desciré/softwow\n28\n🗓️ Orange\n🗓️ Desciré/softwow"
+  },
+  "screenshots": [
+    "resultados-tab.png",
+    "planificacion-tab.png"
+  ]
+}

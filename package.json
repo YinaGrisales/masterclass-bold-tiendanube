@@ -1,0 +1,12 @@
+{
+  "name": "calendario-capture",
+  "version": "1.0.0",
+  "description": "Capture data from calendario-acciones.vercel.app",
+  "type": "module",
+  "scripts": {
+    "capture": "node capture-calendario-data.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}

@@ -1055,6 +1055,7 @@
     }
 
     .modal-close {
+      display: none;
       position: fixed;
       top: 16px;
       left: 16px;
@@ -1063,18 +1064,21 @@
       color: var(--gray-700);
       height: 40px;
       border-radius: 100px;
-      display: flex;
       align-items: center;
       justify-content: center;
       gap: 6px;
       padding: 0 16px;
       cursor: pointer;
       transition: background 0.2s;
-      z-index: 1001;
+      z-index: 1100;
       font-family: inherit;
       font-size: 14px;
       font-weight: 600;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .modal-close.visible {
+      display: flex;
     }
 
     .modal-close:hover {
@@ -1614,13 +1618,13 @@
   </section>
 
   <!-- MODAL FORMULARIO -->
+  <button class="modal-close" id="modalBackBtn" onclick="closeModal()" aria-label="Volver">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    Volver
+  </button>
   <div class="modal-overlay" id="formModal">
     <div class="modal-content">
       <div class="modal-body">
-        <button class="modal-close" onclick="closeModal()" aria-label="Volver">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-          Volver
-        </button>
         <div class="modal-header-logos">
           <img src="assets/logo-bold.png" alt="Bold" class="logo-bold">
           <span style="color:var(--gray-200);">×</span>
@@ -1662,10 +1666,12 @@
     }
 
     var modal = document.getElementById('formModal');
+    var backBtn = document.getElementById('modalBackBtn');
     var formLoaded = false;
 
     function openModal() {
       modal.classList.add('active');
+      backBtn.classList.add('visible');
       document.body.style.overflow = 'hidden';
 
       if (!formLoaded && window.hbspt) {
@@ -1680,6 +1686,7 @@
 
     function closeModal() {
       modal.classList.remove('active');
+      backBtn.classList.remove('visible');
       document.body.style.overflow = '';
     }
 

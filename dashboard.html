@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Informe Ene-Feb-Mar 2026 | Tiendanube Afiliados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --blue-600: #0050C2;
+      --blue-700: #003D94;
+      --blue-50: #EBF2FF;
+      --blue-100: #D6E4FF;
+      --purple-600: #6B2FA0;
+      --purple-50: #EDE9FE;
+      --pink-500: #FF0040;
+      --green-500: #10B981;
+      --green-50: #ECFDF5;
+      --green-700: #047857;
+      --amber-500: #F59E0B;
+      --amber-50: #FFFBEB;
+      --amber-700: #B45309;
+      --red-500: #EF4444;
+      --red-50: #FEF2F2;
+      --red-700: #B91C1C;
+      --gray-50: #F9FAFB;
+      --gray-100: #F3F4F6;
+      --gray-200: #E5E7EB;
+      --gray-300: #D1D5DB;
+      --gray-400: #9CA3AF;
+      --gray-500: #6B7280;
+      --gray-600: #4B5563;
+      --gray-700: #374151;
+      --gray-800: #1F2937;
+      --gray-900: #111827;
+      --white: #FFFFFF;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -1px rgba(0,0,0,0.04);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
+      --radius: 12px;
+      --radius-lg: 16px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      background: var(--gray-900);
+      padding: 14px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .topbar-logo {
+      width: 28px;
+      height: 28px;
+      background: var(--blue-600);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: var(--white);
+      font-size: 14px;
+    }
+
+    .topbar-title {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .topbar-subtitle {
+      color: var(--gray-400);
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .topbar-date {
+      color: var(--gray-400);
+      font-size: 13px;
+    }
+
+    .layout {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+
+    .page-header {
+      margin-bottom: 32px;
+    }
+
+    .page-header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--gray-900);
+      letter-spacing: -0.03em;
+      margin-bottom: 4px;
+    }
+
+    .page-header p {
+      color: var(--gray-500);
+      font-size: 15px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 4px;
+      background: var(--gray-200);
+      padding: 4px;
+      border-radius: 12px;
+      width: fit-content;
+      margin-bottom: 28px;
+    }
+
+    .tab-btn {
+      padding: 10px 24px;
+      border: none;
+      background: transparent;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gray-500);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tab-btn.active {
+      background: var(--white);
+      color: var(--gray-900);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .tab-btn:hover:not(.active) { color: var(--gray-700); }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-blue { background: var(--blue-50); color: var(--blue-600); }
+    .badge-green { background: var(--green-50); color: var(--green-700); }
+    .badge-amber { background: var(--amber-50); color: var(--amber-700); }
+    .badge-purple { background: var(--purple-50); color: var(--purple-600); }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .kpi-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      transition: box-shadow 0.2s;
+    }
+
+    .kpi-card:hover { box-shadow: var(--shadow-md); }
+
+    .kpi-card.highlight {
+      border-color: var(--blue-600);
+      border-width: 2px;
+      background: linear-gradient(135deg, var(--white) 0%, var(--blue-50) 100%);
+    }
+
+    .kpi-card.highlight-green {
+      border-color: var(--green-500);
+      border-width: 2px;
+      background: linear-gradient(135deg, var(--white) 0%, var(--green-50) 100%);
+    }
+
+    .kpi-card.highlight-amber {
+      border-color: var(--amber-500);
+      border-width: 2px;
+      background: linear-gradient(135deg, var(--white) 0%, var(--amber-50) 100%);
+    }
+
+    .kpi-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gray-500);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .kpi-value {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--gray-900);
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+
+    .kpi-value.blue { color: var(--blue-600); }
+    .kpi-value.green { color: var(--green-700); }
+    .kpi-value.amber { color: var(--amber-700); }
+    .kpi-value.red { color: var(--red-500); }
+
+    .kpi-sub {
+      font-size: 12px;
+      color: var(--gray-400);
+      margin-top: 6px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th {
+      text-align: left;
+      padding: 10px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gray-500);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 2px solid var(--gray-200);
+      white-space: nowrap;
+    }
+
+    th.right, td.right { text-align: right; }
+
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--gray-100);
+      color: var(--gray-700);
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    tr.total-row td {
+      font-weight: 800;
+      color: var(--gray-900);
+      border-top: 2px solid var(--gray-300);
+      border-bottom: none;
+      background: var(--gray-50);
+    }
+
+    tr.highlight-row {
+      background: linear-gradient(90deg, rgba(0,80,194,0.05) 0%, transparent 100%);
+    }
+
+    tr.highlight-row td:first-child {
+      border-left: 3px solid var(--blue-600);
+      padding-left: 11px;
+    }
+
+    tr.hl-orange { background: linear-gradient(90deg, rgba(245,158,11,0.07) 0%, transparent 100%); }
+    tr.hl-orange td:first-child { border-left: 3px solid var(--amber-500); padding-left: 11px; }
+    tr.hl-green { background: linear-gradient(90deg, rgba(16,185,129,0.07) 0%, transparent 100%); }
+    tr.hl-green td:first-child { border-left: 3px solid var(--green-500); padding-left: 11px; }
+    tr.hl-purple { background: linear-gradient(90deg, rgba(109,40,217,0.06) 0%, transparent 100%); }
+    tr.hl-purple td:first-child { border-left: 3px solid var(--purple-600); padding-left: 11px; }
+    tr.hl-red { background: linear-gradient(90deg, rgba(239,68,68,0.06) 0%, transparent 100%); }
+    tr.hl-red td:first-child { border-left: 3px solid var(--red-500); padding-left: 11px; }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .tag-clase { background: #EDE9FE; color: #6D28D9; }
+    .tag-contenido { background: #FEF3C7; color: #92400E; }
+
+    .delta-pos { color: var(--green-700); font-weight: 700; }
+    .delta-neg { color: var(--red-700); font-weight: 700; }
+
+    .palanca-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .palanca-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .palanca-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .palanca-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .dot-blue { background: #5B6AD0; }
+    .dot-orange { background: var(--amber-500); }
+    .dot-green { background: var(--green-500); }
+    .dot-red { background: var(--red-500); }
+
+    .palanca-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--gray-900);
+    }
+
+    .palanca-stats {
+      display: flex;
+      gap: 16px;
+    }
+
+    .palanca-stat { flex: 1; }
+
+    .palanca-stat-label {
+      font-size: 10px;
+      color: var(--gray-400);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .palanca-stat-value {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--gray-900);
+      line-height: 1.2;
+    }
+
+    .palanca-bar {
+      height: 5px;
+      background: var(--gray-100);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .palanca-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+    }
+
+    .projection-banner {
+      background: linear-gradient(135deg, var(--gray-900) 0%, #1e293b 100%);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      color: var(--white);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 28px;
+    }
+
+    .projection-item .proj-label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      font-weight: 600;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .projection-item .proj-value {
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .projection-item .proj-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      margin-top: 8px;
+    }
+
+    .highlighted-actions { margin-bottom: 28px; }
+
+    .action-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: grid;
+      grid-template-columns: 60px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      transition: all 0.2s;
+      margin-bottom: 12px;
+    }
+
+    .action-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .action-card.ac-red { border-left: 4px solid var(--red-500); }
+    .action-card.ac-red .action-date .day { color: var(--red-500); }
+    .action-card.ac-green { border-left: 4px solid var(--green-500); }
+    .action-card.ac-green .action-date .day { color: var(--green-500); }
+    .action-card.ac-orange { border-left: 4px solid var(--amber-500); }
+    .action-card.ac-orange .action-date .day { color: var(--amber-500); }
+
+    .action-date { text-align: center; }
+
+    .action-date .day {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--blue-600);
+      line-height: 1;
+    }
+
+    .action-date .month {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--gray-400);
+      text-transform: uppercase;
+    }
+
+    .action-info h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 4px;
+    }
+
+    .action-info p {
+      font-size: 13px;
+      color: var(--gray-500);
+    }
+
+    .action-metrics {
+      display: flex;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .action-metric-label {
+      font-size: 10px;
+      color: var(--gray-400);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .action-metric-value {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--gray-900);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--gray-200);
+      margin: 32px 0;
+    }
+
+    .afiliados-activos-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .afiliado-activo-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .afiliado-activo-card .aa-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .afiliado-activo-card .aa-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gray-700);
+    }
+
+    .afiliado-activo-card .aa-count {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--gray-900);
+    }
+
+    @media (max-width: 900px) {
+      .layout { padding: 20px 16px; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+      .kpi-value { font-size: 24px; }
+      .palanca-grid { grid-template-columns: 1fr 1fr; }
+      .afiliados-activos-grid { grid-template-columns: 1fr 1fr; }
+      .projection-banner { grid-template-columns: 1fr; padding: 24px; }
+      .projection-item .proj-value { font-size: 36px; }
+      .action-card { grid-template-columns: 56px 1fr; }
+      .action-metrics { display: none; }
+      .tabs { width: 100%; }
+      .tab-btn { flex: 1; text-align: center; font-size: 13px; padding: 10px 12px; }
+    }
+
+    @media (max-width: 480px) {
+      .kpi-grid { grid-template-columns: 1fr; }
+      .palanca-grid { grid-template-columns: 1fr; }
+      .afiliados-activos-grid { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      .topbar { background: var(--white); border-bottom: 2px solid var(--gray-900); }
+      .topbar-title, .topbar-subtitle { color: var(--gray-900); }
+      .topbar-date { color: var(--gray-600); }
+      .tabs { display: none; }
+      .tab-content { display: block !important; }
+      .tab-content + .tab-content { page-break-before: always; }
+      body { background: var(--white); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-brand">
+      <div class="topbar-logo">TN</div>
+      <div>
+        <div class="topbar-title">Hub Afiliados 2026</div>
+        <div class="topbar-subtitle">Informe de resultados</div>
+      </div>
+    </div>
+    <div class="topbar-date">Periodo: Enero &ndash; Febrero &ndash; Marzo 2026</div>
+  </div>
+
+  <div class="layout">
+    <div class="page-header">
+      <h1>Resultados Q1 2026</h1>
+      <p>Consolidado de resultados por canal: Mean Click y Partner Click</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('mean')">Mean Click</button>
+      <button class="tab-btn" onclick="switchTab('partner')">Partner Click</button>
+    </div>
+
+    <!-- ═══════════ MEAN CLICK TAB ═══════════ -->
+    <div class="tab-content active" id="tab-mean">
+
+      <h2 class="section-title">Resumen Mean Click <span class="badge badge-blue">Tableau Attribution</span></h2>
+
+      <!-- Trials -->
+      <div class="card">
+        <div class="card-title">Trials Attribution</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Mes</th>
+              <th class="right">Enero</th>
+              <th class="right">Febrero</th>
+              <th class="right">Marzo</th>
+              <th class="right" style="color:var(--blue-600)">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Trials</strong></td>
+              <td class="right">193,9</td>
+              <td class="right">391,7</td>
+              <td class="right">27,2</td>
+              <td class="right" style="font-weight:800;color:var(--blue-600)">612,8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- KPIs Trials -->
+      <div class="kpi-grid">
+        <div class="kpi-card highlight">
+          <div class="kpi-label">Trials Total</div>
+          <div class="kpi-value blue">612,8</div>
+          <div class="kpi-sub">Ene + Feb + Mar</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Enero</div>
+          <div class="kpi-value">193,9</div>
+          <div class="kpi-sub">31.6% del total</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Febrero</div>
+          <div class="kpi-value">391,7</div>
+          <div class="kpi-sub">63.9% del total</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Marzo</div>
+          <div class="kpi-value">27,2</div>
+          <div class="kpi-sub">4.4% del total</div>
+        </div>
+      </div>
+
+      <!-- NPs -->
+      <div class="card">
+        <div class="card-title">New Payments Attribution (Payment Period)</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Mes</th>
+              <th class="right">Enero</th>
+              <th class="right">Febrero</th>
+              <th class="right">Marzo</th>
+              <th class="right" style="color:var(--blue-600)">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>New Payments</strong></td>
+              <td class="right">38,9</td>
+              <td class="right">102,3</td>
+              <td class="right">19,9</td>
+              <td class="right" style="font-weight:800;color:var(--blue-600)">161,1</td>
+            </tr>
+            <tr>
+              <td><strong>CVR NP/Trial</strong></td>
+              <td class="right">20,1%</td>
+              <td class="right">26,1%</td>
+              <td class="right">73,2%</td>
+              <td class="right" style="font-weight:800;color:var(--blue-600)">26,3%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card highlight">
+          <div class="kpi-label">NPs Total</div>
+          <div class="kpi-value blue">161,1</div>
+          <div class="kpi-sub">Ene + Feb + Mar</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Enero</div>
+          <div class="kpi-value">38,9</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Febrero</div>
+          <div class="kpi-value">102,3</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Marzo</div>
+          <div class="kpi-value">19,9</div>
+        </div>
+      </div>
+
+      <!-- New Sellers -->
+      <div class="card">
+        <div class="card-title">New Sellers Attribution (First Seller Period)</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Mes</th>
+              <th class="right">Enero</th>
+              <th class="right">Febrero</th>
+              <th class="right">Marzo</th>
+              <th class="right" style="color:var(--blue-600)">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>New Sellers</strong></td>
+              <td class="right">9,67</td>
+              <td class="right">2,92</td>
+              <td class="right">1,00</td>
+              <td class="right" style="font-weight:800;color:var(--blue-600)">13,59</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card highlight">
+          <div class="kpi-label">New Sellers Total</div>
+          <div class="kpi-value blue">13,59</div>
+          <div class="kpi-sub">Ene + Feb + Mar</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">CVR Seller / NP</div>
+          <div class="kpi-value">8,4%</div>
+          <div class="kpi-sub">13,59 / 161,1</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══════════ PARTNER CLICK TAB ═══════════ -->
+    <div class="tab-content" id="tab-partner">
+
+      <h2 class="section-title">Resultados Partner Click <span class="badge badge-green">Hub Afiliados</span></h2>
+
+      <!-- KPIs principales -->
+      <div class="kpi-grid" style="grid-template-columns: repeat(6, 1fr);">
+        <div class="kpi-card highlight">
+          <div class="kpi-label">Trials Tableau Total</div>
+          <div class="kpi-value blue">765</div>
+        </div>
+        <div class="kpi-card highlight">
+          <div class="kpi-label">NPs Tableau Total</div>
+          <div class="kpi-value blue">191</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">NPs Acciones</div>
+          <div class="kpi-value">132</div>
+        </div>
+        <div class="kpi-card highlight-green">
+          <div class="kpi-label">CVR NP/Trial Total</div>
+          <div class="kpi-value green">25,0%</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">New Sellers</div>
+          <div class="kpi-value">19</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Acciones Pendientes</div>
+          <div class="kpi-value">12</div>
+        </div>
+      </div>
+
+      <!-- CAC -->
+      <div class="kpi-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="kpi-card highlight-green" style="text-align:center;padding:28px;">
+          <div class="kpi-label">CAC USD Acciones Total</div>
+          <div class="kpi-value green" style="font-size:40px;">$72,40</div>
+          <div class="kpi-sub">Inversi&oacute;n / NPs Acciones</div>
+        </div>
+        <div class="kpi-card highlight-green" style="text-align:center;padding:28px;">
+          <div class="kpi-label">CAC USD General Total</div>
+          <div class="kpi-value green" style="font-size:40px;">$48,52</div>
+          <div class="kpi-sub">Inversi&oacute;n / NPs Tableau</div>
+        </div>
+      </div>
+
+      <!-- CLASES Y CONTENIDOS POR MES -->
+      <h2 class="section-title">Clases y contenidos por mes</h2>
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th class="right">Enero</th>
+              <th class="right">Febrero</th>
+              <th class="right">Marzo</th>
+              <th class="right" style="color:var(--blue-600)">Total Q1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag tag-clase">Clases</span></td>
+              <td class="right">2</td>
+              <td class="right">6</td>
+              <td class="right">9</td>
+              <td class="right" style="font-weight:800;color:var(--blue-600)">17</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-contenido">Contenidos</span></td>
+              <td class="right">0</td>
+              <td class="right">6</td>
+              <td class="right">4</td>
+              <td class="right" style="font-weight:800;color:var(--blue-600)">10</td>
+            </tr>
+            <tr class="total-row">
+              <td>Total acciones</td>
+              <td class="right">2</td>
+              <td class="right">12</td>
+              <td class="right">13</td>
+              <td class="right">27</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- AFILIADOS ACTIVOS POR PALANCA -->
+      <h2 class="section-title">Afiliados activos por palanca</h2>
+      <div class="afiliados-activos-grid">
+        <div class="afiliado-activo-card">
+          <div class="aa-left">
+            <div class="palanca-dot dot-blue"></div>
+            <div class="aa-name">Comunidad</div>
+          </div>
+          <div class="aa-count" style="color:#5B6AD0">6</div>
+        </div>
+        <div class="afiliado-activo-card">
+          <div class="aa-left">
+            <div class="palanca-dot dot-orange"></div>
+            <div class="aa-name">Tradicional</div>
+          </div>
+          <div class="aa-count">3</div>
+        </div>
+        <div class="afiliado-activo-card">
+          <div class="aa-left">
+            <div class="palanca-dot dot-green"></div>
+            <div class="aa-name">Alianza</div>
+          </div>
+          <div class="aa-count">3</div>
+        </div>
+        <div class="afiliado-activo-card">
+          <div class="aa-left">
+            <div class="palanca-dot dot-red"></div>
+            <div class="aa-name">Dropshipping</div>
+          </div>
+          <div class="aa-count">1</div>
+        </div>
+      </div>
+
+      <!-- NPs POR PALANCA -->
+      <h2 class="section-title">NPs por palanca</h2>
+      <div class="palanca-grid">
+        <div class="palanca-card">
+          <div class="palanca-header">
+            <div class="palanca-dot dot-blue"></div>
+            <div class="palanca-name">Comunidad</div>
+          </div>
+          <div class="palanca-bar"><div class="palanca-bar-fill" style="width:100%;background:#5B6AD0"></div></div>
+          <div class="palanca-stats">
+            <div class="palanca-stat">
+              <div class="palanca-stat-label">Acciones</div>
+              <div class="palanca-stat-value">10</div>
+            </div>
+            <div class="palanca-stat">
+              <div class="palanca-stat-label">NPs</div>
+              <div class="palanca-stat-value" style="color:#5B6AD0">109</div>
+            </div>
+          </div>
+        </div>
+        <div class="palanca-card">
+          <div class="palanca-header">
+            <div class="palanca-dot dot-orange"></div>
+            <div class="palanca-name">Tradicional</div>
+          </div>
+          <div class="palanca-bar"><div class="palanca-bar-fill" style="width:3.7%;background:var(--amber-500)"></div></div>
+          <div class="palanca-stats">
+            <div class="palanca-stat">
+              <div class="palanca-stat-label">Acciones</div>
+              <div class="palanca-stat-value">5</div>
+            </div>
+            <div class="palanca-stat">
+              <div class="palanca-stat-label">NPs</div>
+              <div class="palanca-stat-value" style="color:var(--amber-500)">4</div>
+            </div>
+          </div>
+        </div>
+        <div class="palanca-card">
+          <div class="palanca-header">
+            <div class="palanca-dot dot-green"></div>
+            <div class="palanca-name">Alianza</div>
+          </div>
+          <div class="palanca-bar"><div class="palanca-bar-fill" style="width:12.8%;background:var(--green-500)"></div></div>
+          <div class="palanca-stats">
+            <div class="palanca-stat">
+              <div class="palanca-stat-label">Acciones</div>
+              <div class="palanca-stat-value">6</div>
+            </div>
+            <div class="palanca-stat">
+              <div class="palanca-stat-label">NPs</div>
+              <div class="palanca-stat-value" style="color:var(--green-500)">14</div>
+            </div>
+          </div>
+        </div>
+        <div class="palanca-card">
+          <div class="palanca-header">
+            <div class="palanca-dot dot-red"></div>
+            <div class="palanca-name">Dropshipping</div>
+          </div>
+          <div class="palanca-bar"><div class="palanca-bar-fill" style="width:4.6%;background:var(--red-500)"></div></div>
+          <div class="palanca-stats">
+            <div class="palanca-stat">
+              <div class="palanca-stat-label">Acciones</div>
+              <div class="palanca-stat-value">1</div>
+            </div>
+            <div class="palanca-stat">
+              <div class="palanca-stat-label">NPs</div>
+              <div class="palanca-stat-value" style="color:var(--red-500)">5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECCIONES -->
+      <h2 class="section-title">Proyecciones <span class="badge badge-amber">Pendiente</span></h2>
+      <div class="projection-banner">
+        <div class="projection-item">
+          <div class="proj-label">NPs Acciones Pendientes (Proyecciones)</div>
+          <div class="proj-value">189</div>
+          <div class="proj-sub">NPs proyectados de acciones sin resultados</div>
+        </div>
+        <div class="projection-item">
+          <div class="proj-label">Acciones Pendientes</div>
+          <div class="proj-value">12</div>
+          <div class="proj-sub">Acciones programadas sin NPs registrados</div>
+        </div>
+      </div>
+
+      <!-- Q1 vs Meta -->
+      <div class="card">
+        <div class="card-title">Q1 vs Meta</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Indicador</th>
+              <th class="right">Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Trials Tableau Q1</td>
+              <td class="right"><strong>765</strong></td>
+            </tr>
+            <tr>
+              <td>NPs Tableau Q1</td>
+              <td class="right"><strong>191</strong></td>
+            </tr>
+            <tr>
+              <td>Meta Q1</td>
+              <td class="right"><strong>370</strong></td>
+            </tr>
+            <tr>
+              <td>Tableau vs Meta</td>
+              <td class="right"><span class="delta-neg">Faltan 179 (51,6%)</span></td>
+            </tr>
+            <tr>
+              <td>Tableau + Proyecciones</td>
+              <td class="right"><strong>380</strong> (191 + 189)</td>
+            </tr>
+            <tr>
+              <td>Tab + Proy vs Meta</td>
+              <td class="right"><span class="delta-pos">Cumplida (102,7%)</span></td>
+            </tr>
+            <tr>
+              <td>CAC Acciones</td>
+              <td class="right"><strong>$72,40</strong></td>
+            </tr>
+            <tr>
+              <td>CAC General</td>
+              <td class="right"><strong>$48,52</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ACCIONES DESTACADAS -->
+      <div class="divider"></div>
+      <h2 class="section-title">Acciones destacadas</h2>
+
+      <div class="highlighted-actions">
+        <div class="action-card ac-red">
+          <div class="action-date">
+            <div class="day">29</div>
+            <div class="month">Ene</div>
+          </div>
+          <div class="action-info">
+            <h4>Orange</h4>
+            <p><span class="tag tag-clase">Clase</span> &nbsp; WA: 142 &middot; Asist: 30 &middot; TR: 12 &middot; NP/TR: 116,7%</p>
+          </div>
+          <div class="action-metrics">
+            <div>
+              <div class="action-metric-label">NPs</div>
+              <div class="action-metric-value">14</div>
+            </div>
+            <div>
+              <div class="action-metric-label">Proy</div>
+              <div class="action-metric-value">25</div>
+            </div>
+            <div>
+              <div class="action-metric-label">CAC USD</div>
+              <div class="action-metric-value">$99</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-card ac-green">
+          <div class="action-date">
+            <div class="day">04</div>
+            <div class="month">Feb</div>
+          </div>
+          <div class="action-info">
+            <h4>Bold</h4>
+            <p><span class="tag tag-clase">Clase</span> &nbsp; WA: 182 &middot; Asist: 97 &middot; TR: 16 &middot; AST/WA: 50,5%</p>
+          </div>
+          <div class="action-metrics">
+            <div>
+              <div class="action-metric-label">NPs</div>
+              <div class="action-metric-value">7</div>
+            </div>
+            <div>
+              <div class="action-metric-label">Proy</div>
+              <div class="action-metric-value">5</div>
+            </div>
+            <div>
+              <div class="action-metric-label">CAC USD</div>
+              <div class="action-metric-value">$50</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-card ac-green">
+          <div class="action-date">
+            <div class="day">12</div>
+            <div class="month">Feb</div>
+          </div>
+          <div class="action-info">
+            <h4>Petalosi</h4>
+            <p><span class="tag tag-clase">Clase</span> &nbsp; WA: 1.400 &middot; Asist: 160 &middot; TR: 47 &middot; NP/TR: 51,1%</p>
+          </div>
+          <div class="action-metrics">
+            <div>
+              <div class="action-metric-label">NPs</div>
+              <div class="action-metric-value">24</div>
+            </div>
+            <div>
+              <div class="action-metric-label">Proy</div>
+              <div class="action-metric-value">15</div>
+            </div>
+            <div>
+              <div class="action-metric-label">CAC USD</div>
+              <div class="action-metric-value">$55,86</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-card ac-orange">
+          <div class="action-date">
+            <div class="day">20</div>
+            <div class="month">Feb</div>
+          </div>
+          <div class="action-info">
+            <h4>Adsales</h4>
+            <p><span class="tag tag-clase">Clase</span> &nbsp; WA: 238 &middot; Asist: 125 &middot; TR: 24 &middot; AST/WA: 52,5%</p>
+          </div>
+          <div class="action-metrics">
+            <div>
+              <div class="action-metric-label">NPs</div>
+              <div class="action-metric-value">7</div>
+            </div>
+            <div>
+              <div class="action-metric-label">Proy</div>
+              <div class="action-metric-value">10</div>
+            </div>
+            <div>
+              <div class="action-metric-label">CAC USD</div>
+              <div class="action-metric-value">$195,54</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FULL TABLE -->
+      <div class="card">
+        <div class="card-title">Seguimiento de conversiones</div>
+        <div style="overflow-x:auto">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Afiliado</th>
+                <th>Fecha</th>
+                <th>Tipo</th>
+                <th class="right">WA</th>
+                <th class="right">Asist.</th>
+                <th class="right">AST/WA</th>
+                <th class="right">TR</th>
+                <th class="right">WA/TR</th>
+                <th class="right">NPs</th>
+                <th class="right">Proy.</th>
+                <th class="right">&Delta; NP</th>
+                <th class="right">NP/TR</th>
+                <th class="right">Total COP</th>
+                <th class="right">CAC COP</th>
+                <th class="right">CAC USD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><strong>La F&aacute;brica</strong></td>
+                <td>28/01</td>
+                <td><span class="tag tag-clase">Clase</span></td>
+                <td class="right">153</td>
+                <td class="right">45</td>
+                <td class="right">29,4%</td>
+                <td class="right">23</td>
+                <td class="right">15,0%</td>
+                <td class="right"><strong>16</strong></td>
+                <td class="right">10</td>
+                <td class="right"><span class="delta-pos">+6</span></td>
+                <td class="right">69,6%</td>
+                <td class="right">$3.709.800</td>
+                <td class="right">$231.866</td>
+                <td class="right">$62,67</td>
+              </tr>
+              <tr class="hl-orange">
+                <td>2</td>
+                <td><strong>Orange</strong></td>
+                <td>29/01</td>
+                <td><span class="tag tag-clase">Clase</span></td>
+                <td class="right">142</td>
+                <td class="right">30</td>
+                <td class="right">21,1%</td>
+                <td class="right">12</td>
+                <td class="right">8,5%</td>
+                <td class="right"><strong>14</strong></td>
+                <td class="right">25</td>
+                <td class="right"><span class="delta-neg">-11</span></td>
+                <td class="right">116,7%</td>
+                <td class="right">$5.129.190</td>
+                <td class="right">$366.371</td>
+                <td class="right">$99,02</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><strong>Vivi Garcia</strong></td>
+                <td>02/02</td>
+                <td><span class="tag tag-clase">Clase</span></td>
+                <td class="right">250</td>
+                <td class="right">42</td>
+                <td class="right">16,8%</td>
+                <td class="right">38</td>
+                <td class="right">15,2%</td>
+                <td class="right"><strong>33</strong></td>
+                <td class="right">23</td>
+                <td class="right"><span class="delta-pos">+10</span></td>
+                <td class="right">86,8%</td>
+                <td class="right">$5.872.905</td>
+                <td class="right">$177.964</td>
+                <td class="right">$48,10</td>
+              </tr>
+              <tr class="hl-green">
+                <td>4</td>
+                <td><strong>Bold</strong></td>
+                <td>04/02</td>
+                <td><span class="tag tag-clase">Clase</span></td>
+                <td class="right">182</td>
+                <td class="right">97</td>
+                <td class="right">50,5%</td>
+                <td class="right">16</td>
+                <td class="right">8,3%</td>
+                <td class="right"><strong>7</strong></td>
+                <td class="right">5</td>
+                <td class="right"><span class="delta-pos">+2</span></td>
+                <td class="right">43,8%</td>
+                <td class="right">$1.295.000</td>
+                <td class="right">$185.000</td>
+                <td class="right">$50,00</td>
+              </tr>
+              <tr class="hl-purple">
+                <td>5</td>
+                <td><strong>Petalosi</strong></td>
+                <td>12/02</td>
+                <td><span class="tag tag-clase">Clase</span></td>
+                <td class="right">1.400</td>
+                <td class="right">160</td>
+                <td class="right">11,4%</td>
+                <td class="right">47</td>
+                <td class="right">3,4%</td>
+                <td class="right"><strong>24</strong></td>
+                <td class="right">15</td>
+                <td class="right"><span class="delta-pos">+9</span></td>
+                <td class="right">51,1%</td>
+                <td class="right">$4.960.040</td>
+                <td class="right">$206.668</td>
+                <td class="right">$55,86</td>
+              </tr>
+              <tr class="hl-red">
+                <td>6</td>
+                <td><strong>Adsales</strong></td>
+                <td>20/02</td>
+                <td><span class="tag tag-clase">Clase</span></td>
+                <td class="right">238</td>
+                <td class="right">125</td>
+                <td class="right">52,5%</td>
+                <td class="right">24</td>
+                <td class="right">10,1%</td>
+                <td class="right"><strong>7</strong></td>
+                <td class="right">10</td>
+                <td class="right"><span class="delta-neg">-3</span></td>
+                <td class="right">29,2%</td>
+                <td class="right">$5.064.595</td>
+                <td class="right">$723.514</td>
+                <td class="right">$195,54</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      document.querySelectorAll('.tab-content').forEach(function(content) {
+        content.classList.remove('active');
+      });
+      if (tab === 'mean') {
+        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        document.getElementById('tab-mean').classList.add('active');
+      } else {
+        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+        document.getElementById('tab-partner').classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

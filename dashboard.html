@@ -602,6 +602,7 @@
     <div class="tabs">
       <button class="tab-btn active" onclick="switchTab('mean')">Mean Click</button>
       <button class="tab-btn" onclick="switchTab('partner')">Partner Click</button>
+      <button class="tab-btn" onclick="switchTab('compare')">Q1.25 vs Q1.26</button>
     </div>
 
     <!-- ═══════════ MEAN CLICK TAB ═══════════ -->
@@ -1403,6 +1404,397 @@
 
     </div>
 
+    <!-- TAB: Q1.25 vs Q1.26 -->
+    <div class="tab-content" id="tab-compare">
+
+      <h2 class="section-title">Q1 2025 vs Q1 2026 <span class="badge badge-purple">Mean Click &mdash; NPs</span></h2>
+
+      <!-- KPIs comparativos -->
+      <div class="kpi-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="kpi-card highlight">
+          <div class="kpi-label">NPs Q1 2025</div>
+          <div class="kpi-value blue">1.183</div>
+        </div>
+        <div class="kpi-card highlight-green">
+          <div class="kpi-label">NPs Q1 2026</div>
+          <div class="kpi-value green">285,1</div>
+        </div>
+        <div class="kpi-card" style="background: #FEF2F2;">
+          <div class="kpi-label">Variaci&oacute;n</div>
+          <div class="kpi-value" style="color:#DC2626;">-75,9%</div>
+          <div class="kpi-sub">-897,9 NPs</div>
+        </div>
+      </div>
+
+      <!-- Desglose mensual -->
+      <div class="card">
+        <div class="card-title">Desglose mensual NPs</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Mes</th>
+              <th class="right">Q1 2025</th>
+              <th class="right">Q1 2026</th>
+              <th class="right">Var.</th>
+              <th class="right">% Cambio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Enero</strong></td>
+              <td class="right">376,1</td>
+              <td class="right">39,3</td>
+              <td class="right"><span class="delta-neg">-336,9</span></td>
+              <td class="right"><span class="delta-neg">-89,6%</span></td>
+            </tr>
+            <tr>
+              <td><strong>Febrero</strong></td>
+              <td class="right">371,2</td>
+              <td class="right">102,3</td>
+              <td class="right"><span class="delta-neg">-268,9</span></td>
+              <td class="right"><span class="delta-neg">-72,4%</span></td>
+            </tr>
+            <tr>
+              <td><strong>Marzo</strong></td>
+              <td class="right">435,7</td>
+              <td class="right">143,5</td>
+              <td class="right"><span class="delta-neg">-292,2</span></td>
+              <td class="right"><span class="delta-neg">-67,1%</span></td>
+            </tr>
+            <tr class="total-row">
+              <td><strong>Total Q1</strong></td>
+              <td class="right"><strong>1.183</strong></td>
+              <td class="right"><strong>285,1</strong></td>
+              <td class="right"><strong><span class="delta-neg">-897,9</span></strong></td>
+              <td class="right"><strong><span class="delta-neg">-75,9%</span></strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Por clasificación -->
+      <div class="card">
+        <div class="card-title">NPs por clasificaci&oacute;n de afiliado</div>
+        <div style="overflow-x:auto">
+          <table>
+            <thead>
+              <tr>
+                <th>Clasificaci&oacute;n</th>
+                <th class="right">Q1 2025</th>
+                <th class="right">Q1 2026</th>
+                <th class="right">Var.</th>
+                <th class="right">% Cambio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Influencers | Ecommerce</strong></td>
+                <td class="right">573,7</td>
+                <td class="right">40,0</td>
+                <td class="right"><span class="delta-neg">-533,7</span></td>
+                <td class="right"><span class="delta-neg">-93,0%</span></td>
+              </tr>
+              <tr>
+                <td><strong>Influencers | Comunidades</strong></td>
+                <td class="right">248,5</td>
+                <td class="right">191,6</td>
+                <td class="right"><span class="delta-neg">-56,9</span></td>
+                <td class="right"><span class="delta-neg">-22,9%</span></td>
+              </tr>
+              <tr>
+                <td><strong>Afiliado Profissional</strong></td>
+                <td class="right">173,7</td>
+                <td class="right">4,7</td>
+                <td class="right"><span class="delta-neg">-169,0</span></td>
+                <td class="right"><span class="delta-neg">-97,3%</span></td>
+              </tr>
+              <tr>
+                <td><strong>Long Tail</strong></td>
+                <td class="right">122,9</td>
+                <td class="right">44,5</td>
+                <td class="right"><span class="delta-neg">-78,4</span></td>
+                <td class="right"><span class="delta-neg">-63,8%</span></td>
+              </tr>
+              <tr>
+                <td><strong>Influencers | Cursos</strong></td>
+                <td class="right">26,9</td>
+                <td class="right">0</td>
+                <td class="right"><span class="delta-neg">-26,9</span></td>
+                <td class="right"><span class="delta-neg">-100%</span></td>
+              </tr>
+              <tr>
+                <td><strong>Influencers | OOB</strong></td>
+                <td class="right">22,1</td>
+                <td class="right">0</td>
+                <td class="right"><span class="delta-neg">-22,1</span></td>
+                <td class="right"><span class="delta-neg">-100%</span></td>
+              </tr>
+              <tr>
+                <td><strong>Influencers | Dropshipping</strong></td>
+                <td class="right">7,5</td>
+                <td class="right">3,9</td>
+                <td class="right"><span class="delta-neg">-3,6</span></td>
+                <td class="right"><span class="delta-neg">-48,1%</span></td>
+              </tr>
+              <tr class="total-row">
+                <td><strong>Total</strong></td>
+                <td class="right"><strong>1.183</strong></td>
+                <td class="right"><strong>285,1</strong></td>
+                <td class="right"><strong><span class="delta-neg">-897,9</span></strong></td>
+                <td class="right"><strong><span class="delta-neg">-75,9%</span></strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Top generadores -->
+      <div class="divider"></div>
+      <h2 class="section-title">Top 10 generadores de NPs</h2>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:24px;">
+        <!-- Top 2025 -->
+        <div class="card">
+          <div class="card-title">Q1 2025 <span class="badge badge-blue">Mean Click</span></div>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Afiliado</th>
+                <th class="right">NPs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight-row">
+                <td>1</td>
+                <td><strong>aprendamos-marketing3</strong></td>
+                <td class="right"><strong>121,7</strong></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><strong>gabriel-luiz</strong></td>
+                <td class="right"><strong>103,1</strong></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><strong>vivigarcia</strong></td>
+                <td class="right"><strong>95,0</strong></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><strong>grupo-agudelo-uribe-sas</strong></td>
+                <td class="right"><strong>72,4</strong></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><strong>c&aacute;mara-comercio-casanare</strong></td>
+                <td class="right"><strong>71,7</strong></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><strong>sociosnube</strong></td>
+                <td class="right"><strong>69,7</strong></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><strong>orange-up-colombia</strong></td>
+                <td class="right"><strong>62,8</strong></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><strong>la-fbrica-de-dibujos</strong></td>
+                <td class="right"><strong>54,1</strong></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td><strong>aprendamos-mkt</strong></td>
+                <td class="right"><strong>41,4</strong></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td><strong>leo-romero</strong></td>
+                <td class="right"><strong>41,3</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Top 2026 -->
+        <div class="card">
+          <div class="card-title">Q1 2026 <span class="badge badge-green">Mean Click</span></div>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Afiliado</th>
+                <th class="right">NPs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight-row">
+                <td>1</td>
+                <td><strong>la-fbrica-de-dibujos</strong></td>
+                <td class="right"><strong>74,9</strong></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><strong>vivigarcia</strong></td>
+                <td class="right"><strong>34,4</strong></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><strong>petalosi</strong></td>
+                <td class="right"><strong>33,9</strong></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><strong>bold3</strong></td>
+                <td class="right"><strong>33,5</strong></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><strong>orange-up-colombia</strong></td>
+                <td class="right"><strong>33,4</strong></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><strong>dalto</strong></td>
+                <td class="right"><strong>16,6</strong></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><strong>adsales</strong></td>
+                <td class="right"><strong>7,5</strong></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><strong>leoma-store</strong></td>
+                <td class="right"><strong>4,0</strong></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td><strong>comunidadceroa100</strong></td>
+                <td class="right"><strong>3,9</strong></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td><strong>country-toy</strong></td>
+                <td class="right"><strong>3,6</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Afiliados que mejoraron / empeoraron -->
+      <div class="divider"></div>
+      <h2 class="section-title">Afiliados en com&uacute;n &mdash; Comparativa</h2>
+
+      <div class="card">
+        <div class="card-title">Afiliados presentes en ambos Q1</div>
+        <div style="overflow-x:auto">
+          <table>
+            <thead>
+              <tr>
+                <th>Afiliado</th>
+                <th class="right">Q1 2025</th>
+                <th class="right">Q1 2026</th>
+                <th class="right">Var.</th>
+                <th class="right">% Cambio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight-row">
+                <td><strong>la-fbrica-de-dibujos</strong></td>
+                <td class="right">54,1</td>
+                <td class="right">74,9</td>
+                <td class="right"><span class="delta-pos">+20,8</span></td>
+                <td class="right"><span class="delta-pos">+38,5%</span></td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>petalosi</strong></td>
+                <td class="right">26,1</td>
+                <td class="right">33,9</td>
+                <td class="right"><span class="delta-pos">+7,8</span></td>
+                <td class="right"><span class="delta-pos">+29,9%</span></td>
+              </tr>
+              <tr>
+                <td><strong>vivigarcia</strong></td>
+                <td class="right">95,0</td>
+                <td class="right">34,4</td>
+                <td class="right"><span class="delta-neg">-60,5</span></td>
+                <td class="right"><span class="delta-neg">-63,7%</span></td>
+              </tr>
+              <tr>
+                <td><strong>orange-up-colombia</strong></td>
+                <td class="right">62,8</td>
+                <td class="right">33,4</td>
+                <td class="right"><span class="delta-neg">-29,4</span></td>
+                <td class="right"><span class="delta-neg">-46,9%</span></td>
+              </tr>
+              <tr>
+                <td><strong>camilo-barbosa-tv</strong></td>
+                <td class="right">15,1</td>
+                <td class="right">3,6</td>
+                <td class="right"><span class="delta-neg">-11,5</span></td>
+                <td class="right"><span class="delta-neg">-76,0%</span></td>
+              </tr>
+              <tr>
+                <td><strong>leoma-store</strong></td>
+                <td class="right">6,3</td>
+                <td class="right">4,0</td>
+                <td class="right"><span class="delta-neg">-2,3</span></td>
+                <td class="right"><span class="delta-neg">-37,3%</span></td>
+              </tr>
+              <tr>
+                <td><strong>sociosnube</strong></td>
+                <td class="right">69,7</td>
+                <td class="right">2,7</td>
+                <td class="right"><span class="delta-neg">-67,0</span></td>
+                <td class="right"><span class="delta-neg">-96,1%</span></td>
+              </tr>
+              <tr>
+                <td><strong>gabriel-luiz</strong></td>
+                <td class="right">103,1</td>
+                <td class="right">2,0</td>
+                <td class="right"><span class="delta-neg">-101,1</span></td>
+                <td class="right"><span class="delta-neg">-98,1%</span></td>
+              </tr>
+              <tr class="hl-red">
+                <td><strong>aprendamos-marketing3</strong></td>
+                <td class="right">121,7</td>
+                <td class="right">0</td>
+                <td class="right"><span class="delta-neg">-121,7</span></td>
+                <td class="right"><span class="delta-neg">-100%</span></td>
+              </tr>
+              <tr class="hl-red">
+                <td><strong>aprendamos-mkt</strong></td>
+                <td class="right">41,4</td>
+                <td class="right">0</td>
+                <td class="right"><span class="delta-neg">-41,4</span></td>
+                <td class="right"><span class="delta-neg">-100%</span></td>
+              </tr>
+              <tr class="hl-red">
+                <td><strong>grupo-agudelo-uribe-sas</strong></td>
+                <td class="right">72,4</td>
+                <td class="right">1,5</td>
+                <td class="right"><span class="delta-neg">-70,9</span></td>
+                <td class="right"><span class="delta-neg">-97,9%</span></td>
+              </tr>
+              <tr class="hl-red">
+                <td><strong>leo-romero</strong></td>
+                <td class="right">41,3</td>
+                <td class="right">1,0</td>
+                <td class="right"><span class="delta-neg">-40,3</span></td>
+                <td class="right"><span class="delta-neg">-97,6%</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
   <script>
@@ -1413,12 +1805,16 @@
       document.querySelectorAll('.tab-content').forEach(function(content) {
         content.classList.remove('active');
       });
+      var tabs = document.querySelectorAll('.tab-btn');
       if (tab === 'mean') {
-        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        tabs[0].classList.add('active');
         document.getElementById('tab-mean').classList.add('active');
-      } else {
-        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+      } else if (tab === 'partner') {
+        tabs[1].classList.add('active');
         document.getElementById('tab-partner').classList.add('active');
+      } else if (tab === 'compare') {
+        tabs[2].classList.add('active');
+        document.getElementById('tab-compare').classList.add('active');
       }
     }
   </script>
